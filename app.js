@@ -60,8 +60,9 @@ app.post("/failure" , (req , res) => {
   res.redirect("/")
 });
 
+const API_PORT = process.env.PORT || 3001;
 
-app.listen( process.env.PORT || 3000 , () => {
+app.listen( API_PORT , () => {
   console.log("Server is running on port 3000");
 });
 
